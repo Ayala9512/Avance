@@ -1,0 +1,248 @@
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	border: 0 none;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+/* estilos generales */
+nav ul{
+	list-style-type: none;
+}
+nav li{
+	line-height: 4.5em;
+}
+nav a{
+	color: #ddd;
+	display: block;
+	padding: 0 4.0em;
+	text-decoration: none;
+  font-size: 20px ;
+}
+nav a:hover{
+	background: rgba(0,0,0,0.5);
+}
+nav>ul{
+	background-color: #333;
+	width: 100%;
+	overflow: hidden;
+}
+nav>ul>li{
+	float: left;
+}
+nav>ul>li>ul{
+	position: absolute;
+	display: none;
+}
+nav>ul>li:hover ul{
+	display: block;
+}
+nav>ul>li>ul>li{
+	background-color: #222;
+}
+h1{
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 2;
+}
+#contenedor {
+	width: 900px;
+	height:500px;
+	margin: 0px auto;
+	position: relative;
+	top: 10%;
+
+	
+}
+body {
+
+	background-image: url(../img/16.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+    
+    
+}
+
+header, section, footer, aside, nav, article, figure {
+	display: block;
+}
+
+header {
+	width: 100%;
+	padding: 40px 0px 20px 0px;
+	text-align: center;
+	
+    -webkit-box-shadow:  0px 3px 3px 3px #000;
+    -moz-box-shadow:  0px 3px 3px 3px #000;
+    box-shadow:  0px 3px 3px 3px #000;    
+}
+
+#tienda {
+	background: rgba(0,0,0,0.5);
+	width: 1000px; height: 450px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	border-radius:10px 10px 10px 10px;
+	-webkit-box-shadow: 2px 2px 3px 2px #888;
+    -moz-box-shadow: 2px 2px 3px 2px #888;
+    box-shadow:  2px 2px 3px 2px #888;
+}
+
+.per {
+	width: 150px; height: 150px;
+	margin: 12px;
+	border: solid 4px #0431B4;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	left: 50px; top: 50px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+
+.per h1 {
+	font-weight: bold;
+	font-size: .9em;
+	margin: 0px 0px .1em 0px;
+	text-align: center;
+}
+
+
+.per p {
+	font-size: .7em;
+	text-decoration: none;
+	margin: 0px 0px .1em 0px;
+	text-align: justify;
+}
+
+.datos {
+	padding: 4px;
+	width: 150px;
+	height: 142px;
+	background-color: #0B2161 ;
+	color: white;
+	position: absolute;
+	cursor: pointer;
+	bottom: -119px;
+	left: 0px;
+	font-size: 1em;
+	text-align: justify;
+}
+
+#pacman{
+	font-size: 100px;
+    text-shadow:0 0 4px #ccc,0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
+}
+.per{
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+}
+.per:hover{
+	transform: scale(1.8) rotate(360deg);
+	-webkit-transform:scale(1.8) rotate(360deg);
+-moz-transform:scale(1.8) rotate(360deg);
+-o-transform:scale(1.8) rotate(360deg);
+z-index: 100;
+}
+.per .datos{
+	transition:all 1s;
+	-webkit-transition:all 1s;
+	-moz-transition:all 1s;
+	-o-transition:all 1s;
+}
+.per .datos:hover{
+	bottom:0px;
+}
+#pacman{
+	font-size: 4.5rem;
+	text-align: center;
+	line-height: 2;
+text-shadow:0 0 4px #ccc,0 -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -18px 18px #f20;
+}
+/*footer*/
+footer {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  background-color: #333;
+  padding: 15px 0px;
+}
+
+#pie {
+  width: 810px; height: 82px;
+  background-color: #333;
+  margin: 0px auto;
+  padding: 5px 10px;
+}
+
+#pie img {
+  margin: 0px; padding: 0px;
+}
+
+#redes {
+  float: left;
+}
+
+#notas {
+  float: right;
+  width: 250px;
+  padding: 0px 0px 0px 70px;
+  border-left: #666 solid 2px;
+}
+
+#notas p {
+  margin: 2px 0px 0px 0px;
+  float: left;
+  margin-right: 5px;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+}
+#redes img:hover{
+  animation-name:animacion1;
+  animation-duration: 1s;
+  animation-interation-coun:infinite;
+  animation-direction:alternate;
+  -webkit-animation-name: animacion1;
+  -webkit-animation-duration:1s;
+  -webkit-animation-interation-coun:infinite;
+  -webkit-animation-direction:alternate;
+}
+@keyframes animacion1 {
+  0%{
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.5);
+  }
+  66%{
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+
+}
+@-webkit-keyframes animacion1 {
+  0%{
+    -webkit-transform: scale(1);
+  }
+  33%{
+    -webkit-transform: scale(0.5);
+  }
+  66%{
+    -webkit-transform: scale(1);
+  }
+  100%{
+    -webkit-transform: scale(0.5);
+  }
+}

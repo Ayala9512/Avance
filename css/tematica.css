@@ -1,0 +1,195 @@
+/*Fuentes*/
+@import url(http://fonts.googleapis.com/css?family=Didact+Gothic);
+*{
+	font-family: 'Didact Gothic', sans-serif;
+	margin: 0;
+	padding: 0;
+	text-align: justify;
+
+}
+/*Estilos Iniciales*/
+
+
+h1{
+	font-size: 1.3em;
+	text-align: center;
+	color: #464d52;
+}
+
+/* estilos generales */
+nav ul{
+	list-style-type: none;
+}
+nav li{
+	line-height: 4.5em;
+}
+nav a{
+		color: #ddd;
+	display: block;
+	padding: 0 3.5em;
+	text-decoration: none;
+  font-size: 20px ;
+}
+nav a:hover{
+	background: rgba(0,0,0,0.5);
+}
+nav>ul{
+	background-color: #333;
+	width: 100%;
+	overflow: hidden;
+}
+nav>ul>li{
+	float: left;
+}
+nav>ul>li>ul{
+	position: absolute;
+	display: none;
+}
+nav>ul>li:hover ul{
+	display: block;
+}
+nav>ul>li>ul>li{
+	background-color: #222;
+}
+/*Parte Superior*/
+#superior{
+	width: 100%;
+	padding: 2% 0px;
+	background-image: url(../img/17.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+
+}
+#encabezado{
+
+	margin: 0px auto;
+	width:80%;
+	min-width: 650px;
+	max-width: 960px;
+}
+#superior #encabezado #logo{
+	margin: 2% 0px;
+	width: 21%;
+}
+#superior #encabezado #imgDesc img{
+	float: left;
+	width: 60.0%;
+	height: 435px ;
+
+}
+#descripcion p{
+	margin: 5%;
+	color: white;
+	font-weight: bold;
+	line-height: 180%;
+	text-align: justify;
+
+}
+#descripcion{
+	width: 38.5%;
+	height:  420px ;
+	background: rgba(0,0,0,0.5);
+	float: right;
+	text-align: center;
+	padding: 7px ;
+	font-size: 17px ;
+}
+#descripcion2 p{
+	margin: 5%;
+	color: white;
+	font-weight: bold;
+	line-height: 180%;
+	text-align: justify;
+
+}
+#descripcion2{
+	width: 100%;
+	height:  auto ;
+	background:rgba(0,0,0,0.5);
+	float: right;
+	text-align: center;
+	padding: 1px ;
+	font-size: 17px ;
+}
+#imgDesc{
+	
+	overflow: hidden;
+}
+/*footer*/
+footer {
+  margin: 20px 0px 0px 0px;
+  width: 100%;
+  background-color: #333;
+  padding: 15px 0px;
+}
+
+#pie {
+  width: 810px; height: 82px;
+  background-color: #333;
+  margin: 0px auto;
+  padding: 5px 10px;
+}
+
+#pie img {
+  margin: 0px; padding: 0px;
+}
+
+#redes {
+  float: left;
+}
+
+#notas {
+  float: right;
+  width: 250px;
+  padding: 0px 0px 0px 70px;
+  border-left: #666 solid 2px;
+}
+
+#notas p {
+  margin: 2px 0px 0px 0px;
+  float: left;
+  margin-right: 5px;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+}
+#redes img:hover{
+  animation-name:animacion1;
+  animation-duration: 1s;
+  animation-interation-coun:infinite;
+  animation-direction:alternate;
+  -webkit-animation-name: animacion1;
+  -webkit-animation-duration:1s;
+  -webkit-animation-interation-coun:infinite;
+  -webkit-animation-direction:alternate;
+}
+@keyframes animacion1 {
+  0%{
+    transform: scale(1);
+  }
+  33% {
+    transform: scale(0.5);
+  }
+  66%{
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+  }
+
+}
+@-webkit-keyframes animacion1 {
+  0%{
+    -webkit-transform: scale(1);
+  }
+  33%{
+    -webkit-transform: scale(0.5);
+  }
+  66%{
+    -webkit-transform: scale(1);
+  }
+  100%{
+    -webkit-transform: scale(0.5);
+  }
+}
